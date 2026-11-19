@@ -110,4 +110,4 @@ OPPO / vivo 都有系统级单手模式，但那是把整屏等比缩到角落�
 ---
 
 代码：Android 原生（无 AndroidX，Canvas 自绘）+ Java Swing，局域网 UDP。
-仓库地址：`https://github.com/<你的用户名>/phonemouse`
+仓库地址：https://github.com/mzl12345/PhoneMouse
