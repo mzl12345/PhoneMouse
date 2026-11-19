@@ -1,0 +1,39 @@
+# ---- 签名与密钥（绝不能进仓库）----
+_keystore/
+keystore.properties
+*.jks
+*.keystore
+
+# ---- 归档与分发产物 ----
+_归档-*/
+_朋友测试包/
+新版本/
+*.apk
+*.zip
+
+# ---- 构建产物 ----
+build/
+*/build/
+pc/out/
+pc/out-*/
+*.class
+*.jar
+.gradle/
+
+# ---- 本地环境 ----
+local.properties
+.idea/
+*.iml
+.vscode/
+
+# ---- 日志与临时文件 ----
+*.log
+*.log.err
+receiver.log
+diag.log
+*.csv
+
+# ---- 系统 ----
+Thumbs.db
+desktop.ini
+.DS_Store

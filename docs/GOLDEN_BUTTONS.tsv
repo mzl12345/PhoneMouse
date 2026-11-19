@@ -1,0 +1,49 @@
+# 黄金行为表 —— 电脑端的回归基准
+#
+# 用途：重构前后行为必须一模一样。改任何按键逻辑后跑：
+#   pwsh -File D:\Projects\PhoneMouse\pc\test\compare-golden.ps1
+# 输出必须是 GOLDEN OK。
+#
+# 格式（TAB 分隔）：
+#   T <id> <按下时的输入调用> <抬起时的输入调用> <flash 高亮码>
+#   C <id> <自定义键路由后的输入调用>
+#
+# 第一段的调用词汇：click:L/R/M、hold:L:true、wheel:N、combo:X、volume:up|down、media:prev|next|play
+# 第一段用的是「空配置」，所以 21–24 没有调用；自定义键路由单列在第二段。
+#
+# 来源与可信度（2026-11-19）：
+#   该表的数据来自重构后的 ButtonMap/ButtonDispatcher 实际输出，
+#   在冻结为基准前已逐行对照 v1.6 的 PcReceiver.handleButton()（第 561–681 行）人工核对，
+#   24 条编号、flash 码、up 不触发，全部一致。
+T	1	click:L		clk L
+T	2	click:R		clk R
+T	3	hold:L:true		clk L
+T	4	wheel:-1		whl -1
+T	5	wheel:1		whl 1
+T	6	combo:ENTER		key ENTER
+T	7	combo:ESC		key ESC
+T	8	combo:CTRL+C		key CTRL+C
+T	9	combo:UP		key UP
+T	10	combo:DOWN		key DOWN
+T	11	combo:LEFT		key LEFT
+T	12	combo:RIGHT		key RIGHT
+T	13	combo:ENTER		key ENTER
+T	14	volume:up		
+T	15	volume:down		
+T	17	volume:up		
+T	18	volume:down		
+T	19	media:prev		
+T	20	media:next		
+T	25	media:play		key PLAY
+T	21			
+T	22			
+T	23			
+T	24			
+T	26	click:M		clk M
+T	27	combo:CTRL+V		key CTRL+V
+T	28	combo:CTRL+Z		key CTRL+Z
+# ---- 自定义键路由（桩配置：21=key CTRL+V / 22=whl -1 / 23=clk R / 24=nonsense）----
+C	21	combo:CTRL+V
+C	22	wheel:-1
+C	23	click:R
+C	24	
