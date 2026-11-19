@@ -43,7 +43,10 @@ javac -encoding UTF-8 -d out @%TEMP%\sources.txt
 jar --create --file PhoneMouseReceiver.jar --main-class phonemouse.PcReceiver -C out .
 ```
 
-辅助 exe（4 个，改过一次就重新编）：
+辅助 exe（4 个，改过一次就重新编）。
+
+> **仓库里不包含这 4 个 exe** —— 它们是编译产物（`.gitignore` 已排除）。
+> clone 下来之后必须先跑下面这几条，否则电脑端的文字输入 / 音量 / 媒体键 / Esc 都不能用。
 
 ```bat
 cd /d D:\Projects\PhoneMouse\pc

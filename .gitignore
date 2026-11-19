@@ -37,3 +37,6 @@ diag.log
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# 辅助 exe 是 csc 编译产物，用 pc\build.bat 或 BUILD.md 里的命令自行编译
+pc/*.exe
