@@ -5,8 +5,10 @@ keystore.properties
 *.keystore
 
 # ---- 归档与分发产物 ----
-_归档-*/
-_朋友测试包/
+归档/
+重要/
+发布包/
+日志/
 新版本/
 *.apk
 *.zip
@@ -40,3 +42,6 @@ desktop.ini
 
 # 辅助 exe 是 csc 编译产物，用 pc\build.bat 或 BUILD.md 里的命令自行编译
 pc/*.exe
+
+# 本地目录地图（不属于仓库）
+目录说明.md
