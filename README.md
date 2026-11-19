@@ -132,6 +132,10 @@ pwsh -File pc/test/compare-golden.ps1
 - 光标按所有屏幕并集钳制，多显示器下不会被挡住（v2.1 起）
 - 「定中」是锁定式开关，切到别的 App 再回来会自动解除
 
+## 作者
+
+**mzl** — [@mzl12345](https://github.com/mzl12345)
+
 ## License
 
 [MIT](LICENSE)
