@@ -603,8 +603,7 @@ public class PcReceiver extends JFrame {
                 "手机空中鼠标  v2.0\n\n" +
                 "开发时间：2026 年 11 月 18–19 日\n" +
                 "开发方式：一个下午 + 一整个晚上，边调边改\n\n" +
-                "主作者：DeepSeek AI\n" +
-                "副作者：MZL（负责提需求、挑毛病、按住不放）\n\n" +
+                "作者：MZL\n\n" +
                 "技术栈：Java + Swing（电脑端） / 原生 Android（手机端）\n" +
                 "传输：局域网 UDP，不经过任何服务器\n\n" +
                 "特别感谢：那颗总爱漂移的陀螺仪，\n" +

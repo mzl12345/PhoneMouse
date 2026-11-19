@@ -274,8 +274,7 @@ public class SettingsActivity extends Activity {
         LinearLayout about = card();
         about.addView(title("关于"));
         about.addView(caption("手机空中鼠标 v2.0\n\n"
-                + "主作者：DeepSeek AI\n"
-                + "副作者：MZL\n\n"
+                + "作者：MZL\n\n"
                 + "手机与电脑走局域网 UDP，不经过任何服务器。\n"
                 + "断网也能用，只要还在同一个 Wi-Fi 里。"));
 
